@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AptitudeX is a complete placement aptitude preparation platform with lessons, formulas, practice, mock tests and progress tracking.">
+  <meta name="theme-color" content="#6457e6">
+  <title>AptitudeX — Placement Preparation, Reimagined</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-glow glow-one"></div><div class="page-glow glow-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="AptitudeX home"><span class="brand-mark">A<span>×</span></span><span>Aptitude<span>X</span></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a class="active" href="#home">Home</a><a href="#topics">Learn</a><a href="#question-bank">Question Bank</a><a href="#important-pdfs">PDF Library</a><a href="#tests">Mock Tests</a><a href="#roadmap">Roadmap</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchOpen" aria-label="Open search">⌕</button>
+      <button class="icon-button" id="themeToggle" aria-label="Toggle dark mode">☾</button>
+      <button class="avatar" id="profileButton" aria-label="View Rohith Kumar Dhamagtal's profile">RK</button>
+      <button class="menu-button" id="menuToggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span>✦</span> Your placement journey starts here</div>
+        <h1>Master aptitude.<br><span>Land your dream job.</span></h1>
+        <p>Structured lessons, smart practice, and placement-level mock tests—everything you need to go from basics to interview-ready.</p>
+        <div class="hero-actions"><a class="button primary" href="#topics">Start learning <span>→</span></a><a class="button secondary" href="#tests"><span>▷</span> Take a mock test</a></div>
+        <div class="hero-trust"><div class="faces"><span>RK</span><span>AM</span><span>SV</span><span>+</span></div><div><strong>50,000+</strong><small>learners preparing smarter</small></div></div>
+      </div>
+      <div class="hero-visual" aria-label="Learning dashboard preview">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-pill pill-top"><i>↗</i><span><strong>+18%</strong> this week</span></div>
+        <div class="dashboard-card">
+          <div class="dash-head"><div><small>Good morning,</small><strong>Rohith Kumar Dhamagtal 👋</strong></div><span>•••</span></div>
+          <div class="dash-progress"><div class="ring" style="--progress:72"><div><strong>72%</strong><small>Complete</small></div></div><div><small>OVERALL PROGRESS</small><h3>Keep it going!</h3><p>18 of 25 topics completed</p><div class="mini-bar"><i></i></div></div></div>
+          <div class="continue-card"><span class="topic-icon purple">%</span><div><small>CONTINUE LEARNING</small><strong>Percentages</strong><p>Lesson 8 of 12</p></div><button aria-label="Continue percentage lesson">→</button></div>
+          <div class="stats-row"><div><span>◎</span><strong>326</strong><small>Questions</small></div><div><span>⚡</span><strong>12</strong><small>Day streak</small></div><div><span>◈</span><strong>84%</strong><small>Accuracy</small></div></div>
+        </div>
+        <div class="floating-pill pill-bottom"><i>✓</i><span><strong>Daily goal met!</strong><small>15 questions solved</small></span></div>
+      </div>
+    </section>
+
+    <section class="stats-strip section"><div><strong>50+</strong><span>Complete topics</span></div><div><strong>2,500+</strong><span>Practice questions</span></div><div><strong>120+</strong><span>Mock tests</span></div><div><strong>30+</strong><span>Company patterns</span></div></section>
+
+    <section class="section topics-section" id="topics">
+      <div class="section-heading"><div><div class="eyebrow">Explore the syllabus</div><h2>Everything you need to <span>master</span></h2><p>Learn through clear concepts, curated formulas, solved examples, and progressive practice.</p></div><a href="#topics" id="viewAllTopics">View all topics →</a></div>
+      <div class="topic-tabs" role="tablist"><button class="active" data-category="All">All topics</button><button data-category="Quantitative">Quantitative</button><button data-category="Logical">Logical reasoning</button><button data-category="Verbal">Verbal ability</button><button data-category="Data">Data interpretation</button></div>
+      <div class="topics-grid" id="topicsGrid"></div>
+    </section>
+
+    <section class="section bank-section" id="question-bank">
+      <div class="section-heading"><div><div class="eyebrow">Master question bank</div><h2>Practice until every pattern feels <span>familiar</span></h2><p>Original placement-style questions with difficulty, topic, model, hints, worked solutions, shortcuts, review flags, and instant feedback.</p></div><div class="bank-count"><strong id="bankTotal">2000+</strong><small>questions · 40 models/topic</small></div></div>
+      <div class="bank-shell">
+        <aside class="bank-sidebar"><label>Find a question<input id="questionSearch" type="search" placeholder="Search keyword..."></label><label>Topic<select id="questionTopic"><option value="All">All topics</option></select></label><label>Learning mode<select id="questionKind"><option value="All">Examples + practice</option><option>Solved Example</option><option>Practice</option></select></label><label>Question model<select id="questionModel"><option value="All">All models</option></select></label><label>Difficulty<select id="questionDifficulty"><option value="All">All levels</option><option>Beginner</option><option>Easy</option><option>Medium</option><option>Hard</option><option>Placement</option></select></label><label>Company pattern<select id="questionCompany"><option value="All">All patterns</option><option>TCS NQT</option><option>Infosys</option><option>Wipro</option><option>Accenture</option><option>Capgemini</option><option>Cognizant</option><option>General Placement</option><option>R.S. Aggarwal (2017)</option></select></label><button class="button primary" id="randomPractice">Start 20-question drill →</button><div class="bank-mini-stats"><div><strong id="solvedCount">0</strong><small>Solved</small></div><div><strong id="accuracyCount">0%</strong><small>Accuracy</small></div></div></aside>
+        <div class="bank-main"><div class="bank-toolbar"><p id="bankResultLabel">Showing all questions</p><div><button id="prevBank" aria-label="Previous page">‹</button><span id="bankPage">1 / 1</span><button id="nextBank" aria-label="Next page">›</button></div></div><div id="questionList" class="question-list"></div></div>
+      </div>
+    </section>
+
+    <section class="section pdf-section" id="important-pdfs">
+      <div class="section-heading"><div><div class="eyebrow">Offline revision library</div><h2>Important PDFs, ready to <span>download</span></h2><p>Print-friendly formula sheets, solved examples, practice drills, mock-test plans, and the original master guide.</p></div><a href="important_pdfs.pdf" download>Download PDF index ↓</a></div>
+      <div class="pdf-grid">
+        <article class="pdf-card pdf-featured"><div class="pdf-art"><span>PDF</span><b>AX</b></div><div class="pdf-info"><span class="pdf-label">MASTER INDEX</span><h3>Important PDFs</h3><p>One-page catalog of the complete AptitudeX download library.</p><div><span>▤ Catalog</span><span>↧ 0.1 MB</span></div><a class="button primary" href="important_pdfs.pdf" download>Download index →</a></div></article>
+        <article class="pdf-card"><div class="pdf-art purple-art"><span>PDF</span><b>Σ</b></div><div class="pdf-info"><span class="pdf-label">REVISION</span><h3>Formula Handbook</h3><p>Topic-wise formulas, shortcuts and exam-day checklist.</p><div><span>▤ 14 sections</span><span>↧ Print-ready</span></div><a class="button ghost" href="AptitudeX_Formula_Handbook.pdf" download>Download PDF →</a></div></article>
+        <article class="pdf-card"><div class="pdf-art mint-art"><span>PDF</span><b>✓</b></div><div class="pdf-info"><span class="pdf-label">CONCEPTS</span><h3>Solved Examples</h3><p>Worked models for the most repeated placement patterns.</p><div><span>▤ 6 models</span><span>↧ Offline</span></div><a class="button ghost" href="AptitudeX_Solved_Examples.pdf" download>Download PDF →</a></div></article>
+        <article class="pdf-card"><div class="pdf-art orange-art"><span>PDF</span><b>?</b></div><div class="pdf-info"><span class="pdf-label">PRACTICE</span><h3>Practice Workbook</h3><p>Answer-free drills for speed, accuracy and retention.</p><div><span>▤ 8 drills</span><span>↧ Print-ready</span></div><a class="button ghost" href="AptitudeX_Practice_Workbook.pdf" download>Download PDF →</a></div></article>
+        <article class="pdf-card"><div class="pdf-art blue-art"><span>PDF</span><b>◫</b></div><div class="pdf-info"><span class="pdf-label">MOCK TESTS</span><h3>Placement Mock Book</h3><p>Foundation, numerical, logical and grand-test plans.</p><div><span>▤ 4 plans</span><span>↧ Offline</span></div><a class="button ghost" href="AptitudeX_Mock_Test_Book.pdf" download>Download PDF →</a></div></article>
+        <article class="pdf-card"><div class="pdf-art dark-art"><span>ORIGINAL</span><b>AX</b></div><div class="pdf-info"><span class="pdf-label">YOUR GUIDE</span><h3>Master Aptitude Guide</h3><p>Your supplied formulas, examples and placement questions.</p><div><span>▤ Original guide</span><span>↧ 0.2 MB</span></div><a class="button ghost" href="Master_Aptitude_Preparation_Guide.pdf" download>Download PDF →</a></div></article>
+      <article class="pdf-card pdf-featured"><div class="pdf-art blue-art"><span>FULL BANK</span><b>2K</b></div><div class="pdf-info"><span class="pdf-label">NEW · COMPLETE BANK</span><h3>2,000 Question Bank</h3><p>Every topic: 20 worked examples + 20 practice questions, with answer key at the back.</p><div><span>▤ 50 topics</span><span>↧ Full book</span></div><a class="button primary" href="AptitudeX_2000_Question_Bank.pdf" download>Download 2,000 questions →</a></div></article>
+      <article class="pdf-card pdf-featured"><div class="pdf-art dark-art"><span>SOURCE OCR</span><b>RS</b></div><div class="pdf-info"><span class="pdf-label">IMPORTED · 2017 EDITION</span><h3>R.S. Aggarwal Quantitative Aptitude</h3><p>OCR-indexed source PDF with searchable objective questions and original page references.</p><div><span>▤ 4,746 imported</span><span>↧ Source PDF</span></div><a class="button primary" href="dokumen.pub_quantitative-aptitude-for-competitive-examinations-by-rs-aggarwal-reprint-2017nbsped-9352534026-9789352534029_1769142935.pdf" download>Download source PDF →</a></div></article>
+      </div>
+      <details class="more-pdfs priority-pdfs"><summary><span>★ MOST IMPORTANT</span> Show the existing topic handouts in this folder</summary><div><a href="GEOMETRY_CONCEPTS.pdf" download>Geometry Concepts</a><a href="GEOMETRY_HANDOUT 01.pdf" download>Geometry Handout 01</a><a href="GEOMETRY_HANDOUT 02.pdf" download>Geometry Handout 02</a><a href="PROBABILITY_ CONCEPTS.pdf" download>Probability Concepts</a><a href="Probability_HANDOUT.pdf" download>Probability Handout</a><a href="PROBABILITY_EXPLANATORY NOTES.pdf" download>Probability Notes</a><a href="HANDOUT 01_EXPLANATORY NOTES.pdf" download>Explanatory Notes 01</a><a href="HANDOUT 02_EXPLANATORY NOTES.pdf" download>Explanatory Notes 02</a><a href="Some_Important_Links.pdf" download>Important Links</a></div></details>
+    </section>
+
+    <section class="section challenge-section" id="practice">
+      <div class="challenge-card">
+        <div class="challenge-copy"><div class="eyebrow light">⚡ Daily challenge</div><h2>Can you solve today’s question?</h2><p>A shopkeeper marks an item 40% above cost price and gives a 15% discount. What is the profit percentage?</p><div class="question-meta"><span>Quantitative</span><span>Medium</span><span>⏱ 01:00</span></div></div>
+        <div class="answer-panel"><div class="answer-top"><span>Choose your answer</span><strong id="timer">01:00</strong></div><div class="options" id="dailyOptions"><button data-answer="19">A <b>19%</b></button><button data-answer="21">B <b>21%</b></button><button data-answer="25">C <b>25%</b></button><button data-answer="24">D <b>24%</b></button></div><p id="answerFeedback" aria-live="polite">Select an option to check your answer.</p></div>
+      </div>
+    </section>
+
+    <section class="section test-section" id="tests">
+      <div class="section-heading centered"><div><div class="eyebrow">Test yourself</div><h2>Practice that feels like the <span>real test</span></h2><p>Timed tests, detailed solutions, and meaningful analytics built for placement success.</p></div></div>
+      <div class="test-grid">
+        <article class="test-card featured"><div class="test-icon">◫</div><span class="badge">POPULAR</span><h3>Placement Readiness Test</h3><p>Full syllabus assessment based on top company patterns.</p><div class="test-details"><span>◷ 60 min</span><span>▤ 50 questions</span><span>◉ Mixed</span></div><button class="button primary start-test" data-test="Placement Readiness Test">Start test →</button></article>
+        <article class="test-card"><div class="test-icon teal">⌁</div><h3>Quantitative Sprint</h3><p>Build speed across arithmetic and modern math.</p><div class="test-details"><span>◷ 20 min</span><span>▤ 20 questions</span><span>◉ Medium</span></div><button class="button ghost start-test" data-test="Quantitative Sprint">Start test →</button></article>
+        <article class="test-card"><div class="test-icon orange">◇</div><h3>Logical Reasoning</h3><p>Puzzles, arrangements, series, and critical reasoning.</p><div class="test-details"><span>◷ 30 min</span><span>▤ 25 questions</span><span>◉ Adaptive</span></div><button class="button ghost start-test" data-test="Logical Reasoning">Start test →</button></article>
+      </div>
+    </section>
+
+    <section class="section roadmap-section" id="roadmap">
+      <div class="roadmap-copy"><div class="eyebrow">Your study plan</div><h2>A clear path from <span>beginner to hired</span></h2><p>Follow a proven four-stage roadmap. Each milestone combines learning, focused drills, and timed assessments.</p><div class="roadmap-steps"><div class="active"><b>01</b><span><strong>Build your foundation</strong><small>Core arithmetic and calculation skills · Week 1–2</small></span></div><div><b>02</b><span><strong>Strengthen concepts</strong><small>Advanced quantitative and reasoning · Week 3–5</small></span></div><div><b>03</b><span><strong>Practice with purpose</strong><small>Topic tests and weak-area drills · Week 6–8</small></span></div><div><b>04</b><span><strong>Simulate & succeed</strong><small>Company mocks and final revision · Week 9–10</small></span></div></div></div>
+      <div class="roadmap-card"><div class="calendar-head"><button>‹</button><div><strong>July 2026</strong><small>12 day streak 🔥</small></div><button>›</button></div><div class="week"><span>M</span><span>T</span><span>W</span><span>T</span><span>F</span><span>S</span><span>S</span></div><div class="days"><i>20</i><i>21</i><i>22</i><i>23</i><i>24</i><i>25</i><i>26</i><i class="today">27</i><i>28</i><i>29</i><i>30</i><i>31</i><i>1</i><i>2</i></div><div class="today-plan"><small>TODAY'S PLAN</small><div><span class="topic-icon purple">%</span><p><strong>Percentages</strong><small>15 questions · 20 min</small></p><b>8/15</b></div><div><span class="topic-icon mint">▦</span><p><strong>Data Interpretation</strong><small>1 lesson · 15 min</small></p><b>✓</b></div></div></div>
+    </section>
+
+    <section class="section companies"><p>Patterns inspired by leading recruiters</p><div><strong>TCS</strong><strong>Infosys</strong><strong>accenture</strong><strong>amazon</strong><strong>Microsoft</strong><strong>Adobe</strong><strong>J.P.Morgan</strong></div></section>
+    <section class="cta section"><div><span>✦</span><h2>Ready to turn preparation<br>into your <em>next offer?</em></h2><p>Start learning today. Your progress is saved automatically.</p><a class="button white" href="#topics">Start preparing — it’s free →</a></div></section>
+  </main>
+
+  <footer><a class="brand" href="#home"><span class="brand-mark">A<span>×</span></span><span>Aptitude<span>X</span></span></a><p>Your complete companion for Rohith Kumar Dhamagtal’s aptitude and placement preparation.</p><div><a href="#topics">Topics</a><a href="#question-bank">Question Bank</a><a href="#important-pdfs">PDF Library</a><a href="#tests">Tests</a><a href="#roadmap">Roadmap</a></div><small>© 2026 AptitudeX. Built for Rohith Kumar Dhamagtal.</small></footer>
+
+  <div class="modal" id="searchModal" role="dialog" aria-modal="true" aria-labelledby="searchTitle" hidden><div class="modal-box search-box"><div class="modal-head"><h2 id="searchTitle">Search AptitudeX</h2><button class="modal-close" aria-label="Close">×</button></div><input id="globalSearch" type="search" placeholder="Search topics, formulas, companies..." autocomplete="off"><div id="searchResults" class="search-results"></div></div></div>
+  <div class="modal" id="topicModal" role="dialog" aria-modal="true" aria-labelledby="topicTitle" hidden><div class="modal-box topic-detail"><div class="modal-head"><div><span class="eyebrow" id="topicCategory">Quantitative</span><h2 id="topicTitle">Topic</h2></div><button class="modal-close" aria-label="Close">×</button></div><div id="topicContent"></div></div></div>
+  <div class="modal" id="testModal" role="dialog" aria-modal="true" aria-labelledby="testTitle" hidden><div class="modal-box test-modal-box"><div class="modal-head"><div><span class="eyebrow">Live mock</span><h2 id="testTitle">Mock Test</h2></div><button class="modal-close" aria-label="Close">×</button></div><div id="testContent"></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="questions.js"></script>
+  <script src="question_variants.js"></script>
+  <script src="rs_aggarwal_questions.js"></script>
+  <script src="rs_aggarwal_loader.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

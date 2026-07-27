@@ -1,0 +1,14 @@
+# Local/duplicate source folder
+apti-01/
+
+# Local editor and OS files
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+
