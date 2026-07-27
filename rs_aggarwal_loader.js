@@ -45,5 +45,7 @@
     const rule=formula[q.topic]||'Translate the givens into symbols, apply the chapter rule, and simplify.';
     q.steps=mathematicalSteps(q,given,rule,answerText);
   });
-  window.questionBank=(window.questionBank||[]).concat(imported);
+  // The source-book edition is the active curriculum requested by Rohith.
+  // Do not mix generated AptitudeX questions into Examples, Practice, or Tests.
+  window.questionBank=imported;
 })();
